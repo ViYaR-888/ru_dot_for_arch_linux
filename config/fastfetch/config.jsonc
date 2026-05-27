@@ -1,0 +1,52 @@
+{
+  "$schema": "https://github.com",
+  "logo": {
+    "source": "/home/v/Pictures/avatar.png",
+    "type": "kitty-direct",
+    "width": 28,
+    "height": 12,
+    "padding": {
+      "top": 1,
+      "left": 2,
+      "right": 4
+    }
+  },
+  "display": {
+    "separator": " ──❯ ",
+    "color": {
+      "keys": "magenta",
+      "title": "blue"
+    }
+  },
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "host",
+    "kernel",
+    "uptime",
+    "packages",
+    "shell",
+    "display",
+    "de",
+    "wm",
+    "wmtheme",
+    "theme",
+    "icons",
+    "font",
+    "cursor",
+    "terminal",
+    "terminalfont",
+    "cpu",
+    "gpu",
+    "memory",
+    "swap",
+    "disk",
+    "localip",
+    "battery",
+    "poweradapter",
+    "locale",
+    "break",
+    "colors"
+  ]
+}

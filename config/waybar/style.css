@@ -1,0 +1,118 @@
+/* Catppuccin Mocha palette */
+@define-color rosewater #f5e0dc;
+@define-color flamingo #f2cdcd;
+@define-color pink #f5c2e7;
+@define-color mauve #cba6f7;
+@define-color red #f38ba8;
+@define-color maroon #eba0ac;
+@define-color peach #fab387;
+@define-color yellow #f9e2af;
+@define-color green #a6e3a1;
+@define-color teal #94e2d5;
+@define-color sky #89dceb;
+@define-color sapphire #74c7ec;
+@define-color blue #89b4fa;
+@define-color lavender #b4befe;
+@define-color text #cdd6f4;
+@define-color subtext1 #bac2de;
+@define-color subtext0 #a6adc8;
+@define-color overlay2 #9399b2;
+@define-color overlay1 #7f849c;
+@define-color overlay0 #6c7086;
+@define-color surface2 #585b70;
+@define-color surface1 #45475a;
+@define-color surface0 #313244;
+@define-color base #1e1e2e;
+@define-color mantle #181825;
+@define-color crust #11111b;
+
+* {
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome 7 Free", sans-serif;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: alpha(@base, 0.85);
+    border-radius: 12px;
+    color: @text;
+    margin: 0;            /* ← важно: отступы задаются в JSON */
+    padding: 0;
+}
+
+#workspaces button {
+    padding: 0 0px;
+    margin: 0 2px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    border-radius: 10px;
+    color: @text;
+    transition: all 0.2s;
+}
+#workspaces button.active {
+    color: @mauve;
+    font-weight: bold;
+}
+#workspaces button:hover {
+    background: transparent;
+    color: @lavender;
+}
+
+#pulseaudio {
+    padding: 0 6px;
+    color: @peach;
+}
+
+#custom-language {
+    color: @blue;
+    font-weight: bold;
+    padding: 0 2px;
+}
+
+#custom-gpu {
+    color: @text;
+}
+#custom-gpu.low    { color: @green; }
+#custom-gpu.medium { color: @yellow; }
+#custom-gpu.high   { color: @peach; }
+#custom-gpu.critical { color: @red; font-weight: bold; }
+
+#disk,
+#custom-gpu,
+#memory,
+#tray,
+#custom-power {
+    padding: 0 2px;
+    color: @text;
+}
+
+#custom-power {
+    color: @red;
+    padding-right: 11px;
+    margin-right: 2px;
+}
+
+#tray > .passive { -gtk-icon-effect: dim; }
+#tray > .active { -gtk-icon-effect: highlight; }
+
+#clock {
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+/* Календарь при наведении */
+#clock tooltip {
+    background-color: alpha(@base, 0.95);
+    border: none;
+    border-radius: 16px;
+    padding: 16px 20px;
+    color: @text;
+    font-size: 18px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+    min-width: 220px;
+}
+
+window#waybar.HDMI-A-1 * {
+    font-size: 16px;
+}

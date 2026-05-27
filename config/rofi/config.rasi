@@ -1,0 +1,4 @@
+configuration {
+    display-drun: "search";
+    show-icons: true;
+}

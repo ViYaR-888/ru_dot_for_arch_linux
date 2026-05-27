@@ -1,0 +1,53 @@
+[global]
+    ### Геометрия и положение (исправленный синтаксис) ###
+    monitor = 0
+    follow = mouse
+    origin = top-right
+    offset = (20, 50)
+    width = 360
+    height = (0, 300)
+    gap_size = 10
+    corner_radius = 12
+    padding = 12
+    text_icon_padding = 12
+
+    ### Прозрачность ###
+    transparency = 15
+
+    ### Рамки отключаем полностью ###
+    frame_width = 0
+
+    ### Разделитель заголовка и текста (невидимый отступ) ###
+    separator_height = 0
+    separator_color = auto
+
+    ### Шрифт и иконки (исправленный путь) ###
+    font = JetBrainsMono Nerd Font 11
+    icon_path = /usr/share/icons/Papirus/24x24/actions:/usr/share/icons/Papirus/24x24/status:/usr/share/icons/Papirus/24x24/devices:/usr/share/icons/Papirus/24x24/apps:/usr/share/icons/Papirus/24x24/panel
+
+    ### Прогресс-бар ###
+    progress_bar = true
+    progress_bar_height = 6
+    progress_bar_corner_radius = 3
+    progress_bar_min_width = 100
+
+    ### Прочее ###
+    highlight = "#89b4fa"
+    notification_limit = 5
+    idle_threshold = 30
+    history_length = 20
+    browser = firefox
+    always_run_script = true
+
+[urgency_low]
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
+
+[urgency_normal]
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
+
+[urgency_critical]
+    # Лёгкое выделение фоном вместо рамки (тёмно-серый Mocha surface)
+    background = "#313244"
+    foreground = "#cdd6f4"
