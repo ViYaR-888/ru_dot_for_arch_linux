@@ -46,7 +46,7 @@ If you are trying out this rice inside a VM (like VMware or VirtualBox), you wil
 ### 2. Can't open the terminal? (Host Key Conflict)
 Your main OS (the host) loves to steal the **`Super` (Win)** key. Because of this, combos like `Super + Q` won't reach the VM.
 * **The Fix:** Tell your VM to lock your mouse and keyboard fully. In VMware, just click inside the window or press `Ctrl + G`. In VirtualBox, use your `Host Key` (Right Ctrl) to capture input.
-* If it still doesn't work, just temporarily change the bind inside `hyprland.conf` to something like `Ctrl + Alt + T`:
+* If it still doesn't work, just temporarily change the bind inside `hyprland.conf` to something like:
   ```ini
   bind = $mainMod, Q, exec, $terminal
   ```
