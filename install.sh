@@ -23,7 +23,7 @@ echo -e " ${BLUE}╰─${NC} ${GREEN}System packages installed${NC}"
 echo -e "\n ${BLUE}╭─${NC} Setting up AUR helper (yay)..."
 if ! command -v yay &> /dev/null; then
     sudo pacman -S --noconfirm --needed base-devel
-    git clone https://archlinux.org /tmp/yay
+    git clone https://aur.archlinux.org/yay.git /tmp/yay
     cd /tmp/yay && makepkg -si --noconfirm
     cd -
 fi
