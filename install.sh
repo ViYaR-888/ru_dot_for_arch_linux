@@ -55,23 +55,10 @@ sudo pacman -S --noconfirm --needed \
 sudo fc-cache -fv > /dev/null
 echo -e " ${BLUE}╰─${NC} ${GREEN}Fonts installed and cached${NC}"
 
-# === 4. Themes and icons ===
-echo -e "\n ${BLUE}╭─${NC} Installing themes and icons..."
-# catppuccin-gtk-theme-mocha is in AUR, so use yay
-yay -S --noconfirm catppuccin-gtk-theme-mocha
-sudo pacman -S --noconfirm --needed papirus-icon-theme
-echo -e " ${BLUE}╰─${NC} ${GREEN}Themes and icons ready${NC}"
-
-# === 5. Zsh plugins ===
-echo -e "\n ${BLUE}╭─${NC} Installing Zsh plugins..."
-sudo pacman -S --noconfirm --needed \
-    zsh-autosuggestions zsh-syntax-highlighting
-echo -e " ${BLUE}╰─${NC} ${GREEN}Zsh plugins installed${NC}"
-
-# === 6. Force library cache update ===
+# === 4. Force library cache update ===
 sudo ldconfig
 
-# === 7. AUR helper (yay) ===
+# === 5. AUR helper (yay) ===
 echo -e "\n ${BLUE}╭─${NC} Setting up AUR helper (yay)..."
 if ! command -v yay &>/dev/null; then
     sudo pacman -S --noconfirm --needed base-devel
@@ -83,6 +70,19 @@ if ! command -v yay &>/dev/null; then
     rm -rf "$TMPDIR"
 fi
 echo -e " ${BLUE}╰─${NC} ${GREEN}AUR helper is ready${NC}"
+
+# === 6. Themes and icons ===
+echo -e "\n ${BLUE}╭─${NC} Installing themes and icons..."
+# catppuccin-gtk-theme-mocha is in AUR, use yay
+yay -S --noconfirm catppuccin-gtk-theme-mocha
+sudo pacman -S --noconfirm --needed papirus-icon-theme
+echo -e " ${BLUE}╰─${NC} ${GREEN}Themes and icons ready${NC}"
+
+# === 7. Zsh plugins ===
+echo -e "\n ${BLUE}╭─${NC} Installing Zsh plugins..."
+sudo pacman -S --noconfirm --needed \
+    zsh-autosuggestions zsh-syntax-highlighting
+echo -e " ${BLUE}╰─${NC} ${GREEN}Zsh plugins installed${NC}"
 
 # === 8. Waybar from git ===
 echo -e "\n ${BLUE}╭─${NC} Compiling Waybar from git..."
