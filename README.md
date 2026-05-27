@@ -91,11 +91,13 @@ This rice wouldn't exist without the amazing open-source community. Huge thanks 
 * **The Creators of "Pixel Dusk City" Theme** — For making the incredibly stylized pixel-art SDDM login screen.
 * **The Open Source Devs** — Everyone behind Waybar, Rofi, Kitty, Dunst, and all the tiny CLI tools we use every single day. 
 
-
-
+----
 
 > **And remember ── it's Linux, you can do anything here!** 
 
+
+## 📜 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
 #btwiusearch
