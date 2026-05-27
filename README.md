@@ -2,7 +2,7 @@
 
 ============
 Hi. These are my dotfiles for Arch Linux, as I'm incredibly lazy and too lazy to set it all up again. If you like them, feel free to use them!
-============
+
 
 ## Screenshots
 
@@ -31,7 +31,7 @@ That's it. The script will automatically install and configure everything for yo
 * **Notifications:** Dunst
 
 
-============
+
 ## Testing on a Virtual Machine? Read this!
 
 If you are trying out this rice inside a VM (like VMware or VirtualBox), you will probably run into two annoying issues: a crashing terminal and keys not working. Here is how to fix them in 2 minutes:
@@ -54,7 +54,7 @@ Your main OS (the host) loves to steal the **`Super` (Win)** key. Because of thi
   bind = $mainMod, Q, exec, $terminal
   ```
 
-============
+
 
 ## Troubleshooting: Missing Wi-Fi or Bluetooth icons?
 
