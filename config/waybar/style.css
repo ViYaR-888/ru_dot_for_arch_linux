@@ -36,7 +36,7 @@ window#waybar {
     background-color: alpha(@base, 0.85);
     border-radius: 12px;
     color: @text;
-    margin: 0;            /* ← важно: отступы задаются в JSON */
+    margin: 0;
     padding: 0;
 }
 
@@ -101,7 +101,6 @@ window#waybar {
     font-weight: bold;
 }
 
-/* Календарь при наведении */
 #clock tooltip {
     background-color: alpha(@base, 0.95);
     border: none;

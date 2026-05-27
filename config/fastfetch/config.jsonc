@@ -1,7 +1,7 @@
 {
   "$schema": "https://github.com",
   "logo": {
-    "source": "/home/v/Pictures/avatar.png",
+    "source": "$HOME/Pictures/avatar.png",
     "type": "kitty-direct",
     "width": 28,
     "height": 12,
