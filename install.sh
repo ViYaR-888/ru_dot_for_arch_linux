@@ -99,8 +99,8 @@ fi
 mkdir -p ~/.config ~/Pictures ~/Pictures/Wallpapers
 
 # Copy wallpaper files from project root
-if [ -f "room.png" ]; then
-    cp room.png ~/Pictures/Wallpapers/room.png
+if [ -f "room.jpg" ]; then
+    cp room.jpg ~/Pictures/Wallpapers/room.jpg
 fi
 if [ -f "avatar.png" ]; then
     cp avatar.png ~/Pictures/Wallpapers/avatar.png
