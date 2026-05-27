@@ -79,6 +79,21 @@ Since this is a fresh Arch install, you need to manually enable and autostart th
 Reboot your system, and the neat little tray icons will pop right up!
 
 
+
+## Huge Thanks / Credits
+
+This rice wouldn't exist without the amazing open-source community. Huge thanks to everyone who made this possible:
+
+* **Linus Torvalds & The Linux Community** — For creating the best kernel and ecosystem on the planet.
+* **The Arch Linux Team** — For keeping it lightweight, simple, and bleeding-edge. (BTW, I use Arch!)
+* **Hyprland Team (vaxry & contributors)** — For building the most beautiful, smooth, and modern Wayland compositor out there.
+* **The Catppuccin Team** — For the gorgeous, soothing Mocha color palette that saves our eyes.
+* **The Creators of "Pixel Dusk City" Theme** — For making the incredibly stylized pixel-art SDDM login screen.
+* **The Open Source Devs** — Everyone behind Waybar, Rofi, Kitty, Dunst, and all the tiny CLI tools we use every single day. 
+
+
+
+
 > **And remember ── it's Linux, you can do anything here!** 
 
 
