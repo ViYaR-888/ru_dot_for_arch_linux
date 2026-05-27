@@ -41,7 +41,7 @@ echo -e " ${BLUE}╰─${NC} ${GREEN}System utilities installed${NC}"
 # === 2. Hyprland, SDDM, graphical libraries ===
 echo -e "\n ${BLUE}╭─${NC} Installing Hyprland, SDDM-Qt6 and dependencies..."
 sudo pacman -S --noconfirm --needed \
-    hyprland uwsm sddm-qt6 \
+    hyprland uwsm sddm \
     qt6-declarative qt6-svg qt6-5compat qt6-multimedia qt6-multimedia-ffmpeg \
     gst-plugins-base gst-plugins-good gst-plugins-bad gst-plugins-ugly \
     qt5ct kvantum
