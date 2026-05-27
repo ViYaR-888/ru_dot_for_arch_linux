@@ -39,13 +39,13 @@ sudo pacman -S --noconfirm --needed \
 echo -e " ${BLUE}╰─${NC} ${GREEN}System utilities installed${NC}"
 
 # === 2. Hyprland, SDDM, graphical libraries ===
-echo -e "\n ${BLUE}╭─${NC} Installing Hyprland, SDDM-Qt6 and dependencies..."
+echo -e "\n ${BLUE}╭─${NC} Installing Hyprland, SDDM and dependencies..."
 sudo pacman -S --noconfirm --needed \
     hyprland uwsm sddm \
     qt6-declarative qt6-svg qt6-5compat qt6-multimedia qt6-multimedia-ffmpeg \
     gst-plugins-base gst-plugins-good gst-plugins-bad gst-plugins-ugly \
     qt5ct kvantum
-echo -e " ${BLUE}╰─${NC} ${GREEN}Graphics and SDDM-Qt6 environment ready${NC}"
+echo -e " ${BLUE}╰─${NC} ${GREEN}Graphics and SDDM environment ready${NC}"
 
 # === 3. Fonts ===
 echo -e "\n ${BLUE}╭─${NC} Installing required fonts..."
@@ -57,8 +57,9 @@ echo -e " ${BLUE}╰─${NC} ${GREEN}Fonts installed and cached${NC}"
 
 # === 4. Themes and icons ===
 echo -e "\n ${BLUE}╭─${NC} Installing themes and icons..."
-sudo pacman -S --noconfirm --needed \
-    catppuccin-gtk-theme-mocha papirus-icon-theme
+# catppuccin-gtk-theme-mocha is in AUR, so use yay
+yay -S --noconfirm catppuccin-gtk-theme-mocha
+sudo pacman -S --noconfirm --needed papirus-icon-theme
 echo -e " ${BLUE}╰─${NC} ${GREEN}Themes and icons ready${NC}"
 
 # === 5. Zsh plugins ===
@@ -95,7 +96,16 @@ if [ ! -d "config" ] || [ ! -d "home" ]; then
     exit 1
 fi
 
-mkdir -p ~/.config ~/Pictures
+mkdir -p ~/.config ~/Pictures ~/Pictures/Wallpapers
+
+# Copy wallpaper files from project root
+if [ -f "room.png" ]; then
+    cp room.png ~/Pictures/Wallpapers/room.png
+fi
+if [ -f "avatar.png" ]; then
+    cp avatar.png ~/Pictures/Wallpapers/avatar.png
+fi
+
 cp -r config/* ~/.config/
 cp -r home/Pictures/* ~/Pictures/ 2>/dev/null || true
 cp home/.zshrc ~/
