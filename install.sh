@@ -33,7 +33,7 @@ echo ""
 # === 1. Base system utilities ===
 echo -e " ${BLUE}╭─${NC} Installing system utilities..."
 sudo pacman -S --noconfirm --needed \
-    git kitty zsh dunst swaybg rofi fastfetch imv loupe xdg-utils fzf ImageMagick \
+    git kitty zsh dunst swaybg rofi fastfetch imv loupe xdg-utils fzf imagemagick \
     thunar polkit-gnome network-manager-applet blueman \
     wl-clipboard cliphist grim slurp libnotify brightnessctl
 echo -e " ${BLUE}╰─${NC} ${GREEN}System utilities installed${NC}"
