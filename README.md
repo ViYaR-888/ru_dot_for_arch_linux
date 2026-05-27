@@ -79,12 +79,8 @@ Since this is a fresh Arch install, you need to manually enable and autostart th
 Reboot your system, and the neat little tray icons will pop right up!
 
 
-
-
 > **And remember ── it's Linux, you can do anything here!** 
 
 
-
-------------
 
 #btwiusearch
