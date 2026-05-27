@@ -5,7 +5,7 @@ Hi. These are my dotfiles for Arch Linux, as I'm incredibly lazy and too lazy to
 ## For the lazy (Quick Start):
 
 ```bash
-git clone https://github.com
+git clone https://github.com/ViYaR-888/ru_dot_for_arch_linux.git
 cd my-dotfiles
 chmod +x install.sh
 ./install.sh
