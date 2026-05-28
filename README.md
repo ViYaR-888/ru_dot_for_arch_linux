@@ -31,6 +31,14 @@ That's it. The script will automatically install and configure everything for yo
 
 
 
+## How to control windows?
+
+If you don't understand how to manage all of this without a mouse, or if you want to grasp my philosophy of movement, then definitely read **[MyTailing for Dummies](./MyTailing%20for%20Dummies.md)** — it's exactly what you need!
+
+If something doesn't feel right — you can always tweak `~/.config/hypr/hyprland.conf`!
+
+
+
 ## Testing on a Virtual Machine? Read this!
 
 If you are trying out this rice inside a VM (like VMware or VirtualBox), you will probably run into two annoying issues: a crashing terminal and keys not working. Here is how to fix them in 2 minutes:
