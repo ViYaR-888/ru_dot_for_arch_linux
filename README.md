@@ -87,7 +87,7 @@ Since this is a fresh Arch install, you need to manually enable and autostart th
    Open `~/.config/hypr/hyprland.conf` and add these two lines at the bottom so they launch every time you log in:
    
    ```ini
-   exec-once = nm-applet --now
+   exec-once = nm-applet --indicator
    exec-once = blueman-applet
    ```
 
