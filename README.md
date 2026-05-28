@@ -20,6 +20,20 @@ Hi. These are my dotfiles for Arch Linux, as I'm incredibly lazy and too lazy to
 
 ## For the lazy (Quick Start):
 
+> [!WARNING]
+>
+> Before you run the installation script, open `install.sh` and read it in full.  
+> The script applies changes with little user interaction:
+> - It installs packages from official repositories and the AUR **without asking for confirmation** (`--noconfirm`).
+> - It alters system files (SDDM configuration, user groups, etc.).
+> - It is designed for a **clean Arch Linux installation** and is **not idempotent** — interrupting it or running it more than once may leave your system in an inconsistent state.
+>
+> **What you should modify before execution if you want control:**
+> - Remove the `--noconfirm` flag from every `pacman` and `yay` command so you can review each package.
+> - Review the package lists and delete anything you do not intend to install.
+> - Verify the AUR helper installation method and adapt it to your preferences.
+> - Make sure you understand every step. Do not trust the script blindly.
+
 ```bash
 git clone https://github.com/ViYaR-888/ru_dot_for_arch_linux.git
 cd ru_dot_for_arch_linux
