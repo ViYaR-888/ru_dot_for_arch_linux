@@ -1,5 +1,12 @@
 # My rice ──❯ YOUR RICE!
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white" alt="Arch Linux">
+  <img src="https://img.shields.io/badge/Hyprland-58E1FF?style=for-the-badge&logo=hyprland&logoColor=black" alt="Hyprland">
+  <img src="https://img.shields.io/badge/Catppuccin-Mocha-EE99A0?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI0VFOTlBMCIgZD0iTTEyIDJDNi40NyAyIDIgNi40NyAyIDEyczQuNDcgMTAgMTAgMTAgMTAtNC40NyAxMC0xMFMxNy41MyAyIDEyIDJ6Ii8+PC9zdmc+" alt="Catppuccin">
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="MIT License">
+</p>
+
 Hi. These are my dotfiles for Arch Linux, as I'm incredibly lazy and too lazy to set it all up again. If you like them, feel free to use them!
 
 
