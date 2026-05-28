@@ -10,7 +10,6 @@ window {
     border-color: #45475a;
     border-radius: 14px;
     font: "JetBrainsMono Nerd Font 13";
-    /* Фиксируем габариты, чтобы плитки сжались в ровные квадраты */
     width: 440px;
     height: 150px;
     location: center;
@@ -33,7 +32,6 @@ listview {
 }
 
 element {
-    /* Настраиваем вертикальный отступ для квадратной формы */
     padding: 40px 0px;
     border-radius: 12px;
     background-color: #313244;
@@ -46,7 +44,6 @@ element selected {
     text-color: #ffffff;
 }
 
-/* Жёстко вырезаем дефолтный белый квадрат иконки */
 element-icon {
     background-color: transparent;
     text-color: transparent;
